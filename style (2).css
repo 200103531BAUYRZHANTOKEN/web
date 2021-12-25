@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 102, 154);
+}
+
+p {
+    color: rgb(0, 102, 154);
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background:rgb(0, 102, 154);
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.7s;
+}
+.btn:hover {
+    background: rgb(232, 223, 223);
+}
+
+.header {
+    background: radial-gradient(#D4B85B, #C18C10);
+}
+
+.header .row{
+    margin-top: 70px;
+}
+
+.categories {
+    margin: 70px 0;
+}
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.7s;
+}
+
+.col-4 img {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: rgb(0, 102, 154);
+}
+
+.title::after {
+    content: '';
+    background: rgba(0, 105, 154, 0.5);
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4 {
+    font-weight: normal;
+}
+
+.col-4 {
+    font-size: 14px;
+
+}
+
+.col-4:hover {
+    transform: translateY(-7px);
+}
+
+.brands {
+    margin: 100px auto;
+}
+
+.col-5 {
+    width: 160px;
+    margin-bottom: 50px;
+}
+
+.col-5 img {
+    width: 100px;
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+
+.col-5 img:hover {
+    filter: grayscale(0%);
+}
+
+.footer {
+    background: #C18C10;
+    color: whitesmoke;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p {
+    color: whitesmoke;
+}
+
+.footer h3 {
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+}
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img{
+    margin-bottom: 20px;
+    width: 175px;
+    border-radius: 30px;
+}
+
+.footer-col-3, .footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 175px;
+}
+.footer hr {
+    border: none;
+    height: 1px;
+    background: #fff;
+    margin: 20px 0;
+}
+.copyright {
+    text-align: center;
+}
+
+.menu-icon {
+    width: 30px; 
+    display: none;
+    float: right;
+}
+
+@media only screen and (max-width: 850px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        margin-top: 20px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+
+    }
+
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+/* ---------------products.html------------ */
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+select {
+    border: 2px solid rgb(0, 102, 154);
+}
+
+select:focus {
+    outline: none;
+}
+
+/* ======================== Project -3 ======================*/
+
+#login {
+    padding: 100px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#signup {
+    background-image: url(https://wallpapercave.com/wp/wp5490344.jpg);
+}
+
+.t_able{
+    width: 25%;
+    
+
+}
